@@ -7,3 +7,7 @@ public class ThreadManager {
         MyThread thread1 = new MyThread("Thread-Class");
         thread1.start();
 
+        // Thread using Runnable interface
+        Thread thread2 = new Thread(new MyRunnable("Runnable-Interface"));
+        thread2.start();
+
