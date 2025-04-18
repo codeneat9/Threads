@@ -7,3 +7,14 @@ public class MyThread extends Thread {
 
     
     public void run() {
+        // Display current thread activity
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(taskName + " - Count: " + i);
+            try {
+                Thread.sleep(500); // pause for half a second
+            } catch (InterruptedException e) {
+                System.out.println(taskName + " interrupted.");
+            }
+        }
+    }
+}
