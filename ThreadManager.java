@@ -11,3 +11,7 @@ public class ThreadManager {
         Thread thread2 = new Thread(new MyRunnable("Runnable-Interface"));
         thread2.start();
 
+        // Wait for threads to complete
+        try {
+            thread1.join();
+            thread2.join();
