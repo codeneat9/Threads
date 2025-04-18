@@ -15,3 +15,7 @@ public class ThreadManager {
         try {
             thread1.join();
             thread2.join();
+        } catch (InterruptedException e) {
+            System.out.println("Main thread interrupted.");
+        }
+
