@@ -19,3 +19,6 @@ public class ThreadManager {
             System.out.println("Main thread interrupted.");
         }
 
+        System.out.println("=== All Threads Finished ===");
+    }
+}
